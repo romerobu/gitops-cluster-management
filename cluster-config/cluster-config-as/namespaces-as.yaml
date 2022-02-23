@@ -19,7 +19,7 @@ spec:
       source:
         repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
         targetRevision: main
-        path: cluster-config/namespaces/overlays/{{cluster.name}}
+        path: cluster-config/components/namespaces/overlays/{{cluster.name}}
       destination:
         server: '{{cluster.address}}'
       syncPolicy:
