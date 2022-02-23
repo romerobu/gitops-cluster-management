@@ -7,19 +7,19 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/ArgoCD-ACM-Refactor/acm-all-managed-cluster-config.git
-      revision: v1.0.1
+      repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
+      revision: main
       files:
-      - path: "**/cluster.json"
+      - path: "cluster-definition/**/cluster.json"
   template:
     metadata:
       name: '{{cluster.name}}-monitoring'
     spec:
       project: default
       source:
-        repoURL: https://github.com/ArgoCD-ACM-Refactor/acm-managed-clusters-paas-configurations.git
+        repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
         targetRevision: main
-        path: day2-cluster-config/monitoring/overlays/{{cluster.name}}
+        path: cluster-config/monitoring/overlays/{{cluster.name}}
       destination:
         server: '{{cluster.address}}'
       syncPolicy:
