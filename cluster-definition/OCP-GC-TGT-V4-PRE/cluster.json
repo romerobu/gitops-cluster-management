@@ -4,6 +4,7 @@
   "region": "eu-central-1",
   "cluster": {
     "name": "OCP-GC-TGT-V4-PRE",
+    "lowercase_name": "ocp-gc-tgt-v4-pre",
     "address": "https://api.eu-managed01.sandbox135.opentlc.com:6443"
   }
 }
