@@ -1,0 +1,9 @@
+{
+  "environment": "production",
+  "cloud": "aws",
+  "region": "eu-west-3",
+  "cluster": {
+    "name": "OCP-GC-TGT-V4-PRE",
+    "address": "https://api.eu-managed02.sandbox135.opentlc.com:6443"
+  }
+}
