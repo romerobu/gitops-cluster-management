@@ -1,1 +1,1 @@
-Initial Readme
+![MonoRepo HLD](images/monorepo.png)
