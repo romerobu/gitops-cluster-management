@@ -2,24 +2,24 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: day2-cluster-config-as
+  name: cluster-config-as
   namespace: openshift-gitops
 spec:
   generators:
   - git:
-      repoURL: https://github.com/ArgoCD-ACM-Refactor/acm-all-managed-cluster-config.git
+      repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
       revision: hub-cluster
       files:
-      - path: "hub-cluster/cluster.json"
+      - path: "HUB-CLUSTER/cluster.json"
   template:
     metadata:
-      name: 'bootstrapped-day2-cluster-config'
+      name: 'bootstrapped-cluster-config'
     spec:
       project: default
       source:
-        repoURL: https://github.com/ArgoCD-ACM-Refactor/acm-managed-clusters-paas-configurations.git
+        repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
         targetRevision: main
-        path: day2-cluster-config/day2-cluster-config-as
+        path: cluster-config/cluster-config-as
       destination:
         server: '{{cluster.address}}'
       syncPolicy:
