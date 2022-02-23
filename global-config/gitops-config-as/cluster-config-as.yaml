@@ -10,7 +10,7 @@ spec:
       repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
       revision: hub-cluster
       files:
-      - path: "HUB-CLUSTER/cluster.json"
+      - path: "cluster-definition/HUB-CLUSTER/cluster.json"
   template:
     metadata:
       name: 'bootstrapped-cluster-config'
