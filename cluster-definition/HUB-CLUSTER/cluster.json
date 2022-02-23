@@ -1,0 +1,9 @@
+{
+  "environment": "ACM-HUB",
+  "cloud": "aws",
+  "region": "us-east-2",
+  "cluster": {
+    "name": "HUB-CLUSTER",
+    "address": "https://kubernetes.default.svc"
+  }
+}
