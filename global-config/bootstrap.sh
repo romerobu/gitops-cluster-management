@@ -4,7 +4,7 @@ oc apply -f bootstrap/argocd/argocdinstance-acd.yaml
 
 while [[ $( oc get pods -l  app.kubernetes.io/name=openshift-gitops-server -n openshift-gitops -o 'jsonpath={..status.conditions[?(@.type=="Ready")].status}') != "True" ]]; do
    sleep 1
-   echo "We are waiting to a Ready ArgoCD instance"
+   echo "ArgoCD instance is starting"
    echo "..."
    sleep 5
 done
