@@ -7,7 +7,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
+      repoURL: https://github.com/romerobu/gitops-cluster-management.git
       revision: main
       files:
       - path: "cluster-definition/**/cluster.json"
@@ -17,7 +17,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
+        repoURL: https://github.com/romerobu/gitops-cluster-management.git
         targetRevision: main
         path: cluster-config/components/monitoring/overlays/{{cluster.name}}
       destination:

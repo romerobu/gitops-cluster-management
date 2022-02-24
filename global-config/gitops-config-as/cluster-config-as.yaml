@@ -7,7 +7,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
+      repoURL: https://github.com/romerobu/gitops-cluster-management.git
       revision: hub-cluster
       files:
       - path: "cluster-definition/HUB-CLUSTER/cluster.json"
@@ -17,7 +17,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
+        repoURL: https://github.com/romerobu/gitops-cluster-management.git
         targetRevision: main
         path: cluster-config/cluster-config-as
       destination:

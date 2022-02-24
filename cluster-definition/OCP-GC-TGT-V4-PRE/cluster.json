@@ -1,10 +1,10 @@
 {
   "environment": "development",
   "cloud": "aws",
-  "region": "eu-central-1",
+  "region": "us-east-1",
   "cluster": {
     "name": "OCP-GC-TGT-V4-PRE",
     "lowercase_name": "ocp-gc-tgt-v4-pre",
-    "address": "https://api.eu-managed01.sandbox135.opentlc.com:6443"
+    "address": "https://api.managed-cluster-01.sandbox239.opentlc.com"
   }
 }

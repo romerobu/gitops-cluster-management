@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/ArgoCD-ACM-Refactor/gitops-cluster-management.git
+    repoURL: https://github.com/romerobu/gitops-cluster-management.git
     targetRevision: main
     path: global-config/gitops-config-as/
   syncPolicy:
