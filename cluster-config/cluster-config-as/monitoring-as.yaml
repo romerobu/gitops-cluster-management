@@ -13,7 +13,7 @@ spec:
       - path: "cluster-definition/**/cluster.json"
   template:
     metadata:
-      name: '{{cluster.lowercase_name}}-monitoring'
+      name: '{{cluster}}-monitoring'
     spec:
       project: default
       source:

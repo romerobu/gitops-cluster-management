@@ -13,7 +13,7 @@ spec:
       - path: "cluster-definition/**/cluster.json"
   template:
     metadata:
-      name: '{{cluster.lowercase_name}}-namespaces'
+      name: '{{cluster}}-namespaces'
     spec:
       project: default
       source:
