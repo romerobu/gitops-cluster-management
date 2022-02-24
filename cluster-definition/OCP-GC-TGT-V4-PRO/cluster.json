@@ -5,6 +5,6 @@
   "cluster": {
     "name": "OCP-GC-TGT-V4-PRO",
     "lowercase_name": "ocp-gc-tgt-v4-pro",
-    "address": "https://api.managed-cluster-02.sandbox239.opentlc.com"
+    "address": "https://api.cluster-0a8a.0a8a.sandbox575.opentlc.com:6443"
   }
 }
